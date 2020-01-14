@@ -112,7 +112,7 @@ variable "policies" {
     storage_permissions     = list(string)
   }))
   description = "Define a Azure Key Vault access policy"
-  default     = {}
+  default = {}
 }
 
 variable "secrets" {
@@ -120,5 +120,5 @@ variable "secrets" {
     value = string
   }))
   description = "Define Azure Key Vault secrets"
-  default     = {}
+  default = {}
 }
