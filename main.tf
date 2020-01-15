@@ -14,7 +14,7 @@ resource "azurerm_resource_group" "security-rg" {
 
 module "keyvault" {
   source              = "./modules/keyvault"
-  name                = "${var.environment}-keyvault-45"
+  name                = "${var.environment}-keyvault"
   location            = azurerm_resource_group.security-rg.location
   resource_group_name = azurerm_resource_group.security-rg.name
   
@@ -47,4 +47,3 @@ module "keyvault" {
 
   secrets = var.kv-secrets
 }
-
